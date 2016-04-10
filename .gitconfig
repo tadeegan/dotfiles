@@ -1,9 +1,13 @@
 [user]
-	name = Thomas Deegan
-	email = tadeegan@gmail.com
+        name = Thomas Deegan
+        email = tadeegan@gmail.com
 [color]
-	ui = auto
+        ui = auto
 [core]
-	autocrlf = input
+        autocrlf = input
 [alias]
-	l = log --oneline --decorate --graph --all
+        s = status
+        l = log --oneline --decorate --graph --all
+        co = checkout
+[push]
+        default = simple
