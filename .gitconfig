@@ -9,5 +9,6 @@
         s = status
         l = log --oneline --decorate --graph --all
         co = checkout
+        ds = diff --staged
 [push]
         default = simple
