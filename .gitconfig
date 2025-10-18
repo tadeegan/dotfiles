@@ -10,5 +10,15 @@
         l = log --oneline --decorate --graph --all
         co = checkout
         ds = diff --staged
+        b = branch -vv --sort=-committerdate
+        unstage = restore --staged
+        rbc = rebase --continue
+        c = commit -m
 [push]
         default = simple
+        autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
